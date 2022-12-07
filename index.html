@@ -5,16 +5,34 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
         <title>Advent of CSS/JS 2022 – 1: Pomodoro Timer</title>
         <script defer="defer" src="./js/runtime.61fcc6dd27103c1dc289.bundle.js"></script>
-        <script defer="defer" src="./js/main.e8d31698429c4340c514.bundle.js"></script>
+        <script defer="defer" src="./js/main.697151ff14b124b8b89c.bundle.js"></script>
         <link href="./styles/main.a99794b007bfeb591dad.css" rel="stylesheet" />
     </head>
     <body>
         <main class="timer" id="timer">
             <form class="timer__inner">
                 <div class="timer__countdown">
-                    <input type="number" id="min" name="min" value="05" min="-1" max="60" disabled="disabled" />
+                    <input
+                        type="number"
+                        id="min"
+                        name="min"
+                        value="05"
+                        min="-1"
+                        max="60"
+                        disabled="disabled"
+                        required
+                    />
                     <span class="timer__countdown-separator">:</span>
-                    <input type="number" id="sec" name="sec" value="00" min="-1" max="60" disabled="disabled" />
+                    <input
+                        type="number"
+                        id="sec"
+                        name="sec"
+                        value="00"
+                        min="-1"
+                        max="60"
+                        disabled="disabled"
+                        required
+                    />
                 </div>
                 <button type="submit" class="timer__trigger">Start</button>
                 <button type="button" class="timer__set">
