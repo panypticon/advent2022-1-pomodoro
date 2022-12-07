@@ -43,7 +43,11 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
         display: flex;
-        margin-top: 8rem;
+        margin: 8rem 0 2rem 0;
+
+        > * {
+            line-height: 17.5rem;
+        }
 
         &-separator {
             display: inline-block;
@@ -59,7 +63,7 @@
             font-weight: inherit;
             -moz-appearance: textfield;
             border-bottom: 0.1rem dotted #fff;
-            height: 20rem;
+            height: 19rem;
             caret-color: #fff;
             padding: 1rem;
 
