@@ -9,9 +9,9 @@
         <main class="timer" id="timer">
             <form class="timer__inner">
                 <div class="timer__countdown">
-                    <input type="number" id="min" name="min" value="05" min="-1" max="60" disabled />
+                    <input type="number" id="min" name="min" value="05" min="-1" max="60" disabled required />
                     <span class="timer__countdown-separator">:</span>
-                    <input type="number" id="sec" name="sec" value="00" min="-1" max="60" disabled />
+                    <input type="number" id="sec" name="sec" value="00" min="-1" max="60" disabled required />
                 </div>
                 <button type="submit" class="timer__trigger">Start</button>
                 <button type="button" class="timer__set"><img src="images/gear.svg" /></button>

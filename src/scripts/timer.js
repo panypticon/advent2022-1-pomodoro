@@ -78,6 +78,7 @@ class Timer {
     }
 
     renderTime(difference) {
+        Number.isNaN(difference) && this.reset();
         const differenceMin = Math.trunc(Math.round(difference) / 60);
         const differenceSec = Math.round(difference) % 60;
         const progressInPercent = this.running ? (difference / (this.setTime.min * 60 + this.setTime.sec)) * 100 : 100;
