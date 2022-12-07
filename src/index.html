@@ -6,5 +6,16 @@
         <title>Advent of CSS/JS 2022 – 1: Pomodoro Timer</title>
     </head>
     <body>
+        <main class="timer" id="timer">
+            <form class="timer__inner">
+                <div class="timer__countdown">
+                    <input type="number" id="min" name="min" value="05" min="-1" max="60" disabled />
+                    <span class="timer__countdown-separator">:</span>
+                    <input type="number" id="sec" name="sec" value="00" min="-1" max="60" disabled />
+                </div>
+                <button type="submit" class="timer__trigger">Start</button>
+                <button type="button" class="timer__set"><img src="images/gear.svg" /></button>
+            </form>
+        </main>
     </body>
 </html>

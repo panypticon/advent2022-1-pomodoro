@@ -1,0 +1,8 @@
+@use '../abstracts/' as *;
+
+body {
+    background-color: #2b2a30;
+    min-height: 100vh;
+
+    @include center;
+}

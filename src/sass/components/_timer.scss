@@ -1,0 +1,98 @@
+@use '../abstracts/' as *;
+
+.timer {
+    width: 51.8rem;
+    height: 51.8rem;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--color-active) 0,
+        var(--color-active) var(--timer-state),
+        #000 var(--timer-state),
+        #000
+    );
+    box-shadow: 5px -16px 50px 0px rgba(255, 255, 255, 0.15), -5px 14px 44px 0px #000;
+    @include center;
+
+    &__inner {
+        width: 50rem;
+        height: 50rem;
+        background: radial-gradient(71.4% 71.4% at 51.7% 28.6%, #3a393f 0%, #17171a 100%);
+        box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.45) inset;
+        border-radius: 50%;
+        @include center;
+        flex-direction: column;
+
+        button {
+            background: transparent;
+            border: none;
+            color: inherit;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            cursor: pointer;
+            padding: 1rem;
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+    }
+
+    &__countdown {
+        background: linear-gradient(180deg, #fff 0%, #d5d8e1 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: flex;
+        margin-top: 8rem;
+
+        &-separator {
+            display: inline-block;
+            margin: 0 1rem;
+        }
+
+        input {
+            background-color: transparent;
+            font-size: inherit;
+            border: 0;
+            width: 18rem;
+            font-family: inherit;
+            font-weight: inherit;
+            -moz-appearance: textfield;
+            border-bottom: 0.1rem dotted #fff;
+            height: 20rem;
+            caret-color: #fff;
+            padding: 1rem;
+
+            &:disabled {
+                border-bottom-color: transparent;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            &#min {
+                text-align: right;
+            }
+        }
+    }
+
+    &__trigger {
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+    }
+
+    &__set {
+        margin-top: 1rem;
+
+        &:disabled {
+            opacity: 0.15;
+        }
+    }
+}
