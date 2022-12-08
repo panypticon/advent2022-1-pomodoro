@@ -39,19 +39,20 @@
     }
 
     &__countdown {
-        background: linear-gradient(180deg, #fff 0%, #d5d8e1 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
         display: flex;
+        align-items: center;
         margin: 8rem 0 2rem 0;
 
         > * {
-            line-height: 17.5rem;
+            -webkit-text-fill-color: transparent;
+            background: linear-gradient(180deg, #fff 0%, #d5d8e1 100%);
+            background-clip: text;
         }
 
         &-separator {
             display: inline-block;
             margin: 0 1rem;
+            line-height: 1;
         }
 
         input {
@@ -63,9 +64,7 @@
             font-weight: inherit;
             -moz-appearance: textfield;
             border-bottom: 0.1rem dotted #fff;
-            height: 19rem;
             caret-color: #fff;
-            padding: 1rem;
 
             &:disabled {
                 border-bottom-color: transparent;
@@ -90,6 +89,7 @@
     &__trigger {
         text-transform: uppercase;
         letter-spacing: 1rem;
+        margin-top: -3rem;
     }
 
     &__set {
