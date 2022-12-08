@@ -1,1 +1,46 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/><title>Advent of CSS/JS 2022 – 1: Pomodoro Timer</title><script defer="defer" src="/js/runtime.61fcc6dd27103c1dc289.bundle.js"></script><script defer="defer" src="/js/main.697151ff14b124b8b89c.bundle.js"></script><link href="/styles/main.ad21c07f9588c37e377d.css" rel="stylesheet"></head><body><main class="timer" id="timer"><form class="timer__inner"><div class="timer__countdown"><input type="number" id="min" name="min" value="05" min="-1" max="60" disabled="disabled" required/> <span class="timer__countdown-separator">:</span> <input type="number" id="sec" name="sec" value="00" min="-1" max="60" disabled="disabled" required/></div><button type="submit" class="timer__trigger">Start</button> <button type="button" class="timer__set"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF8xMDhfNykiPgo8cGF0aCBkPSJNMjggMTRWMTBIMjMuNzE0QzIzLjUyNiA5LjI3NCAyMy4yMzggOC41OTIgMjIuODY2IDcuOTYyTDI1Ljg5OCA0LjkzTDIzLjA3IDIuMUwyMC4wNCA1LjEzMkMxOS40MDYgNC43NiAxOC43MjYgNC40NzIgMTggNC4yODRWMEgxNFY0LjI4NEMxMy4yNzQgNC40NzQgMTIuNTk0IDQuNzYgMTEuOTYgNS4xMzRMOC45MyAyLjFMNi4xMDIgNC45MjhMOS4xMzIgNy45NkM4Ljc2MiA4LjU5MiA4LjQ3MiA5LjI3MiA4LjI4NiAxMEg0VjE0SDguMjg2QzguNDc0IDE0LjcyNiA4Ljc2MiAxNS40MDggOS4xMzQgMTYuMDM4TDYuMTAyIDE5LjA3Mkw4LjkzIDIxLjlMMTEuOTYyIDE4Ljg2OEMxMi41OTQgMTkuMjQgMTMuMjc0IDE5LjUyOCAxNC4wMDIgMTkuNzE4VjI0SDE4LjAwMlYxOS43MTZDMTguNzI4IDE5LjUyNiAxOS40MDggMTkuMjM4IDIwLjA0MiAxOC44NjZMMjMuMDc0IDIxLjg5OEwyNS45MDIgMTkuMDdMMjIuODcgMTYuMDM2QzIzLjI0MiAxNS40MDYgMjMuNTMgMTQuNzI2IDIzLjcxOCAxMy45OThIMjhWMTRaTTE2IDE2QzEzLjc5MiAxNiAxMiAxNC4yMDYgMTIgMTJDMTIgOS43OTYgMTMuNzkyIDggMTYgOEMxOC4yMDggOCAyMCA5Ljc5NiAyMCAxMkMyMCAxNC4yMDQgMTguMjA4IDE2IDE2IDE2WiIgZmlsbD0iIzU4NTg1OCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfMTA4XzciIHg9IjAiIHk9IjAiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgo8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPgo8ZmVDb2xvck1hdHJpeCBpbj0iU291cmNlQWxwaGEiIHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIgcmVzdWx0PSJoYXJkQWxwaGEiLz4KPGZlT2Zmc2V0IGR5PSI0Ii8+CjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjIiLz4KPGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+CjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjI1IDAiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJlZmZlY3QxX2Ryb3BTaGFkb3dfMTA4XzciLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfMTA4XzciIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjwvZGVmcz4KPC9zdmc+Cg=="/></button></form></main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+        <title>Advent of CSS/JS 2022 – 1: Pomodoro Timer</title>
+        <script defer="defer" src="./js/runtime.61fcc6dd27103c1dc289.bundle.js"></script>
+        <script defer="defer" src="./js/main.697151ff14b124b8b89c.bundle.js"></script>
+        <link href="./styles/main.ad21c07f9588c37e377d.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main class="timer" id="timer">
+            <form class="timer__inner">
+                <div class="timer__countdown">
+                    <input
+                        type="number"
+                        id="min"
+                        name="min"
+                        value="05"
+                        min="-1"
+                        max="60"
+                        disabled="disabled"
+                        required
+                    />
+                    <span class="timer__countdown-separator">:</span>
+                    <input
+                        type="number"
+                        id="sec"
+                        name="sec"
+                        value="00"
+                        min="-1"
+                        max="60"
+                        disabled="disabled"
+                        required
+                    />
+                </div>
+                <button type="submit" class="timer__trigger">Start</button>
+                <button type="button" class="timer__set">
+                    <img
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF8xMDhfNykiPgo8cGF0aCBkPSJNMjggMTRWMTBIMjMuNzE0QzIzLjUyNiA5LjI3NCAyMy4yMzggOC41OTIgMjIuODY2IDcuOTYyTDI1Ljg5OCA0LjkzTDIzLjA3IDIuMUwyMC4wNCA1LjEzMkMxOS40MDYgNC43NiAxOC43MjYgNC40NzIgMTggNC4yODRWMEgxNFY0LjI4NEMxMy4yNzQgNC40NzQgMTIuNTk0IDQuNzYgMTEuOTYgNS4xMzRMOC45MyAyLjFMNi4xMDIgNC45MjhMOS4xMzIgNy45NkM4Ljc2MiA4LjU5MiA4LjQ3MiA5LjI3MiA4LjI4NiAxMEg0VjE0SDguMjg2QzguNDc0IDE0LjcyNiA4Ljc2MiAxNS40MDggOS4xMzQgMTYuMDM4TDYuMTAyIDE5LjA3Mkw4LjkzIDIxLjlMMTEuOTYyIDE4Ljg2OEMxMi41OTQgMTkuMjQgMTMuMjc0IDE5LjUyOCAxNC4wMDIgMTkuNzE4VjI0SDE4LjAwMlYxOS43MTZDMTguNzI4IDE5LjUyNiAxOS40MDggMTkuMjM4IDIwLjA0MiAxOC44NjZMMjMuMDc0IDIxLjg5OEwyNS45MDIgMTkuMDdMMjIuODcgMTYuMDM2QzIzLjI0MiAxNS40MDYgMjMuNTMgMTQuNzI2IDIzLjcxOCAxMy45OThIMjhWMTRaTTE2IDE2QzEzLjc5MiAxNiAxMiAxNC4yMDYgMTIgMTJDMTIgOS43OTYgMTMuNzkyIDggMTYgOEMxOC4yMDggOCAyMCA5Ljc5NiAyMCAxMkMyMCAxNC4yMDQgMTguMjA4IDE2IDE2IDE2WiIgZmlsbD0iIzU4NTg1OCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfMTA4XzciIHg9IjAiIHk9IjAiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgo8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPgo8ZmVDb2xvck1hdHJpeCBpbj0iU291cmNlQWxwaGEiIHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIgcmVzdWx0PSJoYXJkQWxwaGEiLz4KPGZlT2Zmc2V0IGR5PSI0Ii8+CjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjIiLz4KPGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+CjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjI1IDAiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJlZmZlY3QxX2Ryb3BTaGFkb3dfMTA4XzciLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfMTA4XzciIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjwvZGVmcz4KPC9zdmc+Cg=="
+                    />
+                </button>
+            </form>
+        </main>
+    </body>
+</html>
